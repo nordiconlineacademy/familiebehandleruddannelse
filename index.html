@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Familiebehandler.info – Alt du skal vide om livet som familiebehandler</title>
+<meta name="description" content="Artikler om livet som familiebehandler. Lær om uddannelse, løn, arbejdsopgaver og karrieremuligheder.">
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#2c4538;--forest-mid:#233829;--forest-dark:#1a2b20;--forest-light:#3a5947;--gold:#c89b2a;--gold-light:#e8b84b;--gold-pale:#fdf6e3;--cream:#f5f3ee;--white:#ffffff;--text-dark:#1a2b20;--text-mid:#3a4f3d;--text-muted:#7a8c7e;--border:#dde4da;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);font-size:16px;line-height:1.7;}
+nav{background:var(--forest);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100;}
+.logo-wrap{text-decoration:none;display:flex;flex-direction:column;gap:1px;}
+.logo-main{font-family:'Lora',serif;font-size:1.15rem;color:var(--white);letter-spacing:.02em;line-height:1.2;}
+.logo-main span{color:var(--gold-light);}
+.logo-sub{font-size:.67rem;color:rgba(255,255,255,.42);letter-spacing:.07em;text-transform:uppercase;font-weight:400;}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.88rem;transition:color .2s;}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-cta{background:var(--gold)!important;color:var(--forest-dark)!important;padding:.45rem 1.1rem!important;border-radius:4px!important;font-weight:600!important;font-size:.85rem!important;}
+.nav-cta:hover{background:var(--gold-light)!important;}
+.btn-primary{background:var(--gold);color:var(--forest-dark);padding:.85rem 2rem;border-radius:4px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .2s,transform .15s;display:inline-block;}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:rgba(255,255,255,.78);padding:.85rem 2rem;border-radius:4px;font-size:.95rem;text-decoration:none;border:1px solid rgba(255,255,255,.25);transition:border-color .2s,color .2s;display:inline-block;}
+.btn-ghost:hover{border-color:rgba(255,255,255,.6);color:var(--white);}
+footer{background:var(--forest-mid);padding:50px 5% 30px;border-top:1px solid rgba(255,255,255,.06);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.footer-brand p{color:rgba(255,255,255,.42);font-size:.88rem;margin-top:.9rem;line-height:1.7;max-width:300px;}
+.footer-col h4{color:rgba(255,255,255,.72);font-size:.82rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1rem;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:.5rem;}
+.footer-col a{color:rgba(255,255,255,.42);text-decoration:none;font-size:.88rem;transition:color .2s;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-bottom p{color:rgba(255,255,255,.28);font-size:.82rem;}
+.footer-bottom a{color:rgba(255,255,255,.28);}
+@media(max-width:768px){.nav-links{display:none;}.footer-grid{grid-template-columns:1fr;}}
+</style>
+
+
+<style>
+.hero{background:var(--forest);padding:80px 5% 90px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:500px;height:500px;border-radius:50%;border:60px solid rgba(200,155,42,.07);pointer-events:none;}
+.hero-eyebrow{display:inline-block;background:rgba(200,155,42,.15);color:var(--gold-light);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .9rem;border-radius:2px;margin-bottom:1.5rem;border-left:2px solid var(--gold);}
+.hero h1{font-family:'Lora',serif;font-size:2.8rem;line-height:1.22;color:var(--white);margin-bottom:1.4rem;font-weight:600;}
+.hero h1 em{color:var(--gold-light);font-style:italic;}
+.hero-desc{color:rgba(255,255,255,.68);font-size:1.05rem;line-height:1.75;margin-bottom:2.2rem;}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;}
+.hero-stats{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;}
+.stat-num{font-family:'Lora',serif;font-size:2.2rem;color:var(--gold-light);font-weight:600;line-height:1;margin-bottom:.3rem;}
+.stat-label{font-size:.82rem;color:rgba(255,255,255,.5);letter-spacing:.02em;}
+.stat-divider{grid-column:1/-1;height:1px;background:rgba(255,255,255,.1);}
+.section{padding:70px 5%;}
+.section-alt{background:var(--white);}
+.section-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2.5rem;border-bottom:1px solid var(--border);padding-bottom:1.2rem;}
+.section-title{font-family:'Lora',serif;font-size:1.75rem;font-weight:600;color:var(--text-dark);}
+.section-title span{color:var(--gold);}
+.featured-article{background:var(--forest);border-radius:12px;padding:3rem 3.5rem;margin-bottom:2.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;text-decoration:none;transition:transform .2s,background .2s;}
+.featured-article:hover{transform:translateY(-2px);background:var(--forest-light);}
+.featured-article .tag{display:inline-block;background:rgba(200,155,42,.2);color:var(--gold-light);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .75rem;border-radius:2px;margin-bottom:1rem;}
+.featured-article h2{font-family:'Lora',serif;font-size:1.6rem;color:var(--white);margin-bottom:.9rem;line-height:1.3;}
+.featured-article p{color:rgba(255,255,255,.62);font-size:.95rem;line-height:1.7;}
+.featured-arrow{width:54px;height:54px;border-radius:50%;border:1px solid rgba(200,155,42,.4);display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-size:1.3rem;flex-shrink:0;}
+.filter-bar{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem;}
+.filter-btn{background:var(--white);border:1px solid var(--border);color:var(--text-mid);padding:.45rem 1rem;border-radius:20px;font-size:.84rem;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;}
+.filter-btn:hover,.filter-btn.active{background:var(--forest);border-color:var(--forest);color:var(--white);}
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;}
+.article-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1.6rem 1.75rem;text-decoration:none;transition:box-shadow .2s,border-color .2s,transform .2s;display:flex;flex-direction:column;}
+.article-card:hover{box-shadow:0 6px 28px rgba(44,69,56,.12);border-color:rgba(200,155,42,.35);transform:translateY(-2px);}
+.card-num{font-family:'Lora',serif;font-size:.78rem;color:var(--gold);letter-spacing:.08em;margin-bottom:.6rem;font-weight:600;}
+.card-tag{display:inline-block;background:rgba(44,69,56,.08);color:var(--forest);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .65rem;border-radius:2px;margin-bottom:.85rem;border-left:2px solid var(--forest);}
+.article-card h3{font-family:'Lora',serif;font-size:1.06rem;line-height:1.4;color:var(--text-dark);margin-bottom:.75rem;font-weight:600;flex:1;}
+.article-card p{font-size:.88rem;color:var(--text-muted);line-height:1.65;margin-bottom:1.1rem;}
+.card-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:.9rem;margin-top:auto;}
+.read-time{font-size:.78rem;color:var(--text-muted);}
+.read-link{font-size:.82rem;color:var(--forest);font-weight:500;}
+.cta-banner{background:var(--forest);padding:70px 5%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.cta-banner h2{font-family:'Lora',serif;font-size:2.2rem;color:var(--white);line-height:1.3;margin-bottom:1.2rem;}
+.cta-banner h2 em{color:var(--gold-light);font-style:italic;}
+.cta-banner>div>p{color:rgba(255,255,255,.62);line-height:1.75;margin-bottom:1.8rem;}
+.cta-features{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.75rem 1.5rem;}
+.cta-features li{display:flex;align-items:flex-start;gap:.6rem;color:rgba(255,255,255,.72);font-size:.9rem;}
+.cta-features li::before{content:'✓';color:var(--gold-light);font-weight:600;flex-shrink:0;margin-top:2px;}
+.cta-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:2.5rem;}
+.cta-price{font-family:'Lora',serif;font-size:2.8rem;color:var(--gold-light);margin-bottom:.3rem;}
+.cta-price-note{color:rgba(255,255,255,.45);font-size:.85rem;margin-bottom:1.8rem;}
+.btn-cta-large{display:block;text-align:center;background:var(--gold);color:var(--forest-dark);padding:1rem 2rem;border-radius:6px;font-weight:600;font-size:1rem;text-decoration:none;margin-bottom:1rem;transition:background .2s;}
+.btn-cta-large:hover{background:var(--gold-light);}
+.cta-small-note{text-align:center;font-size:.8rem;color:rgba(255,255,255,.35);}
+@media(max-width:768px){.hero{grid-template-columns:1fr;padding:50px 5% 60px;}.hero-stats{display:none;}.articles-grid{grid-template-columns:1fr;}.cta-banner{grid-template-columns:1fr;}.featured-article{grid-template-columns:1fr;}.cta-features{grid-template-columns:1fr;}}
+</style>
+
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo-wrap">
+    <div class="logo-main">Familiebehandler<span>.info</span></div>
+    <div class="logo-sub">af Nordic Online Academy</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#artikler">Artikler</a></li>
+    <li><a href="index.html#artikler">Om faget</a></li>
+    <li><a href="index.html#artikler">Karriere</a></li>
+    <li><a href="https://onlineuddannelse.dk/online-uddannelser/familiebehandler/" target="_blank" class="nav-cta">Start uddannelse →</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div>
+    <div class="hero-eyebrow">Fagets guide</div>
+    <h1>Livet som<br><em>familiebehandler</em><br>– fra A til Z</h1>
+    <p class="hero-desc">Dybdegående artikler om alt, du skal vide om faget som familiebehandler. Fra dagligdagen og lønnen til uddannelsesvejen og karrieremulighederne.</p>
+    <div class="hero-actions">
+      <a href="#artikler" class="btn-primary">Udforsk artiklerne</a>
+      <a href="https://onlineuddannelse.dk/online-uddannelser/familiebehandler/" target="_blank" class="btn-ghost">Se uddannelsen</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div><div class="stat-num">36.500</div><div class="stat-label">Gennemsnitlig månedsløn</div></div>
+    <div><div class="stat-num">4,84</div><div class="stat-label">Uddannelsesvurdering</div></div>
+    <div class="stat-divider"></div>
+    <div><div class="stat-num">6–8</div><div class="stat-label">Måneder til certifikat</div></div>
+    <div><div class="stat-num">100%</div><div class="stat-label">Online og fleksibelt</div></div>
+  </div>
+</section>
+<section class="section section-alt" id="artikler">
+  <div class="section-header">
+    <h2 class="section-title">Artikler om <span>familiebehandling</span></h2>
+  </div>
+  <a href="artikel-01.html" class="featured-article">
+    <div>
+      <div class="tag">Fremhævet artikel</div>
+      <h2>Hvad laver en familiebehandler i hverdagen?</h2>
+      <p>Et indgående kig på en typisk arbejdsdag, de kerneopgaver du vil møde, og hvilke kompetencer der gør en forskel i arbejdet med udsatte familier.</p>
+    </div>
+    <div class="featured-arrow">→</div>
+  </a>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterCards('alle',this)">Alle</button>
+    <button class="filter-btn" onclick="filterCards('faget',this)">Om faget</button>
+    <button class="filter-btn" onclick="filterCards('uddannelse',this)">Uddannelse</button>
+    <button class="filter-btn" onclick="filterCards('karriere',this)">Karriere</button>
+    <button class="filter-btn" onclick="filterCards('metoder',this)">Metoder</button>
+    <button class="filter-btn" onclick="filterCards('selvstaendig',this)">Selvstændig</button>
+  </div>
+  <div class="articles-grid">
+<a href="artikel-01.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">01</div>
+  <h3>Hvad laver en familiebehandler i hverdagen?</h3>
+  <p>Fra hjemmebesøg og samtaler til dokumentation og tværfagligt samarbejde – en dag i en familiebehandlers liv.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-02.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">02</div>
+  <h3>Hvilke kompetencer skal en god familiebehandler have?</h3>
+  <p>Empati og struktur, teori og praksis – vi zoomer ind på de kompetencer, der skiller de dygtige fra de gode.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-03.html" class="article-card" data-cat="karriere">
+  <div class="card-tag">Karriere</div>
+  <div class="card-num">03</div>
+  <h3>Hvad tjener en familiebehandler? Løn og arbejdsvilkår</h3>
+  <p>Gennemsnitsløn, lønspredning og hvad der påvirker din løn som familiebehandler i Danmark.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 4 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-04.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">04</div>
+  <h3>Familiebehandler vs. socialrådgiver – hvad er forskellen?</h3>
+  <p>Mange forveksler de to fagprofiler. Her er en klar gennemgang af forskelle og ligheder.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-05.html" class="article-card" data-cat="uddannelse">
+  <div class="card-tag">Uddannelse</div>
+  <div class="card-num">05</div>
+  <h3>Online eller fysisk familiebehandleruddannelse – fordele og ulemper</h3>
+  <p>Vi sammenligner de to uddannelsesformater og hjælper dig med at finde det, der passer bedst til dig.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-06.html" class="article-card" data-cat="metoder">
+  <div class="card-tag">Metoder</div>
+  <div class="card-num">06</div>
+  <h3>Tilknytningsteorien i familiebehandling – en introduktion</h3>
+  <p>Tilknytning er fundamentet for barnets trivsel. Her forklarer vi teorien og dens praktiske anvendelse.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 7 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-07.html" class="article-card" data-cat="metoder">
+  <div class="card-tag">Metoder</div>
+  <div class="card-num">07</div>
+  <h3>Mentalisering som metode i familiebehandling</h3>
+  <p>Mentaliseringsbaseret terapi og pædagogik vinder frem. Vi forklarer hvad det er, og hvorfor det virker.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-08.html" class="article-card" data-cat="karriere">
+  <div class="card-tag">Karriere</div>
+  <div class="card-num">08</div>
+  <h3>Jobmuligheder som familiebehandler – hvor kan du arbejde?</h3>
+  <p>Kommuner, opholdssteder, klinikker og selvstændig virksomhed – et overblik over dine jobmuligheder.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-09.html" class="article-card" data-cat="metoder">
+  <div class="card-tag">Metoder</div>
+  <div class="card-num">09</div>
+  <h3>Systemteori og genogrammet som familiebehandlerens redskab</h3>
+  <p>Et genogram visualiserer familiemønstre på tværs af generationer. Sådan bruges det i praksis.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-10.html" class="article-card" data-cat="uddannelse">
+  <div class="card-tag">Uddannelse</div>
+  <div class="card-num">10</div>
+  <h3>Hvad indeholder en familiebehandleruddannelse?</h3>
+  <p>Fra tilknytning og traumer til mentalisering og neuroaffektiv psykologi – et kig på uddannelsens kernestof.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-11.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">11</div>
+  <h3>Traumer i familier – hvad skal familiebehandleren vide?</h3>
+  <p>Ubehandlede traumer påvirker hele familiesystemer. Vi ser på, hvad traumer gør ved relationer og trivsel.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 7 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-12.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">12</div>
+  <h3>Underretningspligten – hvad gælder for familiebehandlere?</h3>
+  <p>Som familiebehandler har du underretningspligt. Vi gennemgår reglerne og hvad de betyder i praksis.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-13.html" class="article-card" data-cat="selvstaendig">
+  <div class="card-tag">Selvstændig</div>
+  <div class="card-num">13</div>
+  <h3>Start din egen virksomhed som familiebehandler</h3>
+  <p>Drømmer du om at arbejde for dig selv? Her er det praktiske fundament for at starte op som selvstændig.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-14.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">14</div>
+  <h3>Neuroaffektiv udviklingspsykologi i familiebehandling</h3>
+  <p>Hvad sker der i hjernen under stressfuld opvækst? Neuroaffektiv psykologi giver svar.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-15.html" class="article-card" data-cat="uddannelse">
+  <div class="card-tag">Uddannelse</div>
+  <div class="card-num">15</div>
+  <h3>Hvor lang tid tager det at blive familiebehandler?</h3>
+  <p>Svar på et af de mest stillede spørgsmål: tidshorisonten fra tilmelding til certifikat.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 4 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-16.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">16</div>
+  <h3>Sorg og selvdestruktiv adfærd – familiebehandlerens perspektiv</h3>
+  <p>Hvad er sorg egentlig? Og hvordan arbejder familiebehandleren med selvskade og destruktive mønstre?</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-17.html" class="article-card" data-cat="karriere">
+  <div class="card-tag">Karriere</div>
+  <div class="card-num">17</div>
+  <h3>Hvem ansætter familiebehandlere? Arbejdsmarkedet i 2026</h3>
+  <p>Efterspørgslen på kvalificerede familiebehandlere er stigende. Vi kigger på markedet og mulighederne.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 4 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-18.html" class="article-card" data-cat="selvstaendig">
+  <div class="card-tag">Selvstændig</div>
+  <div class="card-num">18</div>
+  <h3>Markedsføring af din familiebehandlingspraksis</h3>
+  <p>Synlighed, tillid og specialisering – de tre elementer, der bygger en stærk praksis op.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-19.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">19</div>
+  <h3>Overføring og modoverføring – sådan påvirker klienten dig</h3>
+  <p>Overføring og modoverføring er uundgåelige fænomener. At kende dem er din faglige beskyttelse.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-20.html" class="article-card" data-cat="uddannelse">
+  <div class="card-tag">Uddannelse</div>
+  <div class="card-num">20</div>
+  <h3>Hvem bør tage en familiebehandleruddannelse?</h3>
+  <p>Er uddannelsen for dig? Vi gennemgår de profiler, der har mest glæde af at uddanne sig inden for familiebehandling.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 4 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-21.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">21</div>
+  <h3>Den langtidsholdbare familiebehandler – undgå udbrændthed</h3>
+  <p>Faget er intensivt. Her er de vigtigste strategier til at passe på dig selv og holde til det på lang sigt.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-22.html" class="article-card" data-cat="metoder">
+  <div class="card-tag">Metoder</div>
+  <div class="card-num">22</div>
+  <h3>Den professionelle samtale – strukturer og teknikker</h3>
+  <p>Gode samtaler sker ikke af sig selv. Vi gennemgår de teknikker, der strukturerer og fordyber samtalerne.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 6 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-23.html" class="article-card" data-cat="karriere">
+  <div class="card-tag">Karriere</div>
+  <div class="card-num">23</div>
+  <h3>Karriereudvikling som familiebehandler – hvad kommer efter starten?</h3>
+  <p>Fra nyuddannet til specialiseret fagprofessionel – mulighederne for videreuddannelse og specialisering.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 4 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-24.html" class="article-card" data-cat="faget">
+  <div class="card-tag">Om faget</div>
+  <div class="card-num">24</div>
+  <h3>Tværfagligt samarbejde – familiebehandlerens rolle i teamet</h3>
+  <p>Skoler, kommuner, psykologer og sundhedsplejersker. Familiebehandleren som samlingspunkt.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 5 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+<a href="artikel-25.html" class="article-card" data-cat="uddannelse">
+  <div class="card-tag">Uddannelse</div>
+  <div class="card-num">25</div>
+  <h3>Certifikat og Dansk Behandlerforbund – hvad betyder det for din karriere?</h3>
+  <p>Et certifikat dokumenterer dine kompetencer. Her er hvad det konkret giver dig på arbejdsmarkedet.</p>
+  <div class="card-footer">
+    <span class="read-time">⏱ 4 min læsning</span>
+    <span class="read-link">Læs artikel →</span>
+  </div>
+</a>
+
+  </div>
+</section>
+<section class="cta-banner">
+  <div>
+    <h2>Klar til at blive<br><em>professionel familiebehandler?</em></h2>
+    <p>Med uddannelsen fra Nordic Online Academy får du et solidt fagligt fundament og praksisnære metoder – 100% online i dit eget tempo.</p>
+    <ul class="cta-features">
+      <li>Certifikat ved afslutning</li><li>13 moduler, 58 afsnit</li>
+      <li>Personlig studievejledning</li><li>Fleksibelt studietempo</li>
+      <li>Karrierevejledning inkluderet</li><li>1 års DBF-medlemskab</li>
+    </ul>
+  </div>
+  <div class="cta-box">
+    <div class="cta-price">24.900 kr.</div>
+    <p class="cta-price-note">eller fra 4.233 kr./md. i rater</p>
+    <a href="https://onlineuddannelse.dk/online-uddannelser/familiebehandler/" target="_blank" class="btn-cta-large">Tilmeld uddannelsen nu →</a>
+    <p class="cta-small-note">Hos Nordic Online Academy · Bedømt 4,84/5 af 31 studerende</p>
+  </div>
+</section>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-main">Familiebehandler<span>.info</span></div>
+        <div class="logo-sub">af Nordic Online Academy</div>
+      </a>
+      <p>En informationssite om livet, faget og uddannelsen som familiebehandler – skabt til dig, der overvejer et meningsfuldt karriereskift.</p>
+    </div>
+    <div class="footer-col"><h4>Artikler</h4><ul>
+      <li><a href="artikel-01.html">Om hverdagen</a></li>
+      <li><a href="artikel-03.html">Løn og økonomi</a></li>
+      <li><a href="artikel-05.html">Uddannelse</a></li>
+      <li><a href="artikel-08.html">Karrieremuligheder</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Uddannelse</h4><ul>
+      <li><a href="https://onlineuddannelse.dk/online-uddannelser/familiebehandler/" target="_blank">Tilmeld dig</a></li>
+      <li><a href="https://onlineuddannelse.dk/studievejledning/" target="_blank">Studievejledning</a></li>
+      <li><a href="https://onlineuddannelse.dk/anmeldelser/" target="_blank">Anmeldelser</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Familiebehandler.info</p>
+    <p>Uddannelsen udbydes af <a href="https://onlineuddannelse.dk" target="_blank">Nordic Online Academy</a></p>
+  </div>
+</footer>
+
+<script>
+function filterCards(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.article-card').forEach(card => {
+    card.style.display = (cat === 'alle' || card.dataset.cat === cat) ? 'flex' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
